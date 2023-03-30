@@ -19,10 +19,8 @@ html {
 }
 
 body {
-  font-family: "Outfit", sans-serif;
   height: 100vh;
   width: 100vw;
-  background-color: var(--clr-main-bg);
 }
 
 img {
@@ -30,4 +28,131 @@ img {
   height: auto;
   -o-object-fit: contain;
   object-fit: contain;
+}
+
+body {
+  font-family: "Outfit", sans-serif;
+  background-color: var(--clr-main-bg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card {
+  background-color: var(--clr-card-bg);
+  width: 18.5rem;
+  height: auto;
+  padding: 1.25rem;
+  border-radius: var(--radius);
+  box-shadow: 12px 12px 18px rgba(0, 0, 0, 0.25);
+
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.card-image-container {
+  width: 288px;
+  position: relative;
+}
+
+.card-img {
+  border-radius: var(--radius);
+  position: relative;
+}
+
+.overlay {
+  width: 288px;
+  height: 288px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--clr-Cyan);
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: var(--radius);
+  opacity: 0;
+}
+
+.card-image-container:hover .overlay {
+  opacity: 0.5;
+  cursor: pointer;
+}
+
+.card-title {
+  color: var(--clr-white);
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+
+.card-title:hover {
+  color: var(--clr-Cyan);
+  cursor: pointer;
+}
+
+.card-description {
+  font-size: 1rem;
+  color: var(--clr-soft-blue);
+  opacity: 0.6;
+}
+
+.card-details-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.details-left-container,
+.details-right-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.details-left-text {
+  color: var(--clr-Cyan);
+  font-weight: 600;
+}
+
+.details-right-text {
+  color: var(--clr-soft-blue);
+  opacity: 0.75;
+}
+
+.card-divider {
+  border: 1px solid var(--clr-line);
+}
+
+.card-avatar {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1rem;
+}
+
+.avatar-img-container {
+  width: 2rem;
+}
+
+.avatar-img {
+  border: 2px solid var(--clr-white);
+  border-radius: 50%;
+}
+
+.avatar-text {
+  color: var(--clr-soft-blue);
+  opacity: 0.75;
+}
+
+.text-white {
+  color: var(--clr-white);
+}
+
+.text-white:hover {
+  color: var(--clr-Cyan);
+  cursor: pointer;
 }
