@@ -19,7 +19,8 @@ Users should be able to:
 
 ### Links
 
-- Live Site URL: [https://aruntutter.github.io/nft-preview-card-component-main/](https://your-live-site-url.com)
+- Solution URL: [here](https://github.com/aruntutter/nft-preview-card-component-main)
+- Live Site URL: [here](https://aruntutter.github.io/nft-preview-card-component-main/)
 
 ## My process
 
